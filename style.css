@@ -1,0 +1,49 @@
+body {
+    margin: 30px;
+    background-image: url("three.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(77, 4, 248);
+
+}
+
+.container {
+    margin-left: 220px;
+    margin-top: 120px;
+}
+.block {
+    
+    border: 6px solid white;
+    display: inline-block;
+    height: 100px;
+    width:100px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 50px;
+    color: greenyellow;
+    text-shadow:2px chocolate;
+    
+}
+#mylives {
+    font-size: 30px;
+    margin-left: 550px;
+    color: black;
+    /* margin-top: 20px; */
+}
+.buttons{
+    display: inline-block;
+    margin-left: 550px;
+    margin-top: 80px;
+
+}
+.bottons #reset {                        /*button */
+    
+    height: 50px;
+    width:100px;
+}
+
+.buttons #quit {                        /*button */
+
+    height: 38px;
+    width:100px;
+}    
