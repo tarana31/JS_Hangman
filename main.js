@@ -3,10 +3,18 @@ var wordarr= ["DATABASE","ICECREAM","CHIPOTLE","NOVEMBER","VIOLENCE","SANDWICH",
                 ];       //array of words
 
 var word= wordarr[Math.floor(Math.random() * wordarr.length)];      //to pick a random word
+
 var letter;  
 var lives=5 ;   
 var counter=0;
 var foundMatch = false;
+
+var hint_ans = {"DATABASE": "backbone of programming", "ICECREAM": "Summer Special", "CHIPOTLE":"Spicy Mayo", "NOVEMBER":"Before last month",
+                "VIOLENCE":"No hint for this one","SANDWICH":"Hunger Special","TOGETHER":"Everything two"}
+
+var hint = document.querySelector(".hint");
+
+hint.innerHTML = `Clue: ${hint_ans[word]}`;
 
 function random(game) { 
     
@@ -51,6 +59,8 @@ document.addEventListener('keypress', function(e){
         random(letter);
             
 })
+
+
 function quit() {
     window.close();
 }

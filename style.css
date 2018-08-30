@@ -41,6 +41,11 @@ body {
     height: 50px;
     width:100px;
 }
+.hint {
+    font-size: 30px;
+    margin-left: 550px;
+    color: black;
+}
 
 .buttons #quit {                        /*button */
 
